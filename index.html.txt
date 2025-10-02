@@ -1,0 +1,151 @@
+<!--
+  index.html
+  Kişiselleştirilmiş, tek dosyalık GitHub Pages sitesi
+  Kullanım: Bu dosyayı doğrudan "gokergokkaya.github.io" repounuza ekleyin
+  - Değiştirmeniz gereken yerler: data-email, sosyal linkler, proje linkleri ve avatar.jpg
+  - Özel alan adı kullanacaksanız repoya bir CNAME dosyası ekleyin
+-->
+
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Göker Gokkaya — Kişisel Sayfa</title>
+  <meta name="description" content="Göker Gokkaya - Preci-Spark OGP bölüm lideri. Projeler, hobiler ve iletişim." />
+  <style>
+    :root{
+      --max-w:1200px;
+      --accent:#0b63ff;
+      --muted:#666;
+      --gap:22px;
+      font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background: #fbfdff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;color:#0d1721;background:linear-gradient(180deg, #fbfdff 0%, #ffffff 100%);-webkit-font-smoothing:antialiased}
+    .wrap{max-width:var(--max-w);margin:0 auto;padding:0 22px}
+
+    header.hero{padding:56px 0}
+    .hero-grid{display:flex;gap:var(--gap);align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .hero-left{flex:1 1 520px}
+    .hero-right{flex:0 0 360px;min-width:260px}
+
+    h1{margin:0 0 8px;font-size:clamp(28px,4vw,44px)}
+    .lead{margin:0 0 18px;color:var(--muted);font-size:clamp(15px,1.6vw,18px)}
+    .cta{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
+
+    .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 8px 30px rgba(12,20,30,0.06)}
+    .stats{display:flex;gap:12px;margin-top:12px}
+    .stat{background:#f6f8ff;padding:10px 12px;border-radius:8px;text-align:center}
+    main{padding:36px 0}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    footer{padding:28px 0;background:transparent;color:var(--muted)}
+
+    .avatar{width:100%;height:220px;border-radius:8px;object-fit:cover;background:linear-gradient(135deg,#e6f0ff,#ffffff)}
+
+    a.social{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;border:1px solid #eef2ff;text-decoration:none;color:var(--muted);font-weight:600}
+
+    pre.snip{background:#0b1220;color:#cfe7ff;padding:12px;border-radius:8px;overflow:auto}
+
+    @media (max-width:760px){
+      .hero-right{order:2}
+      .hero-left{order:1}
+      .avatar{height:180px}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1>Merhaba — Göker Gokkaya</h1>
+          <p class="lead">Preci-Spark'ta kalite kontrol OGP bölüm lideriyim; OGP Summit ve Vantage 450 makine programlaması yapıyorum. Bu sayfa kişisel projelerimi, antrenman notlarımı ve iletişim bilgilerimi içerir.</p>
+          <p style="margin:12px 0 0;">Hızlı bağlantılar:</p>
+          <div style="display:flex;gap:10px;margin-top:10px;flex-wrap:wrap">
+            <a class="cta" href="#projeler">Projeler</a>
+            <a class="cta" href="#iletisim" style="background:#0d6efd">İletişim</a>
+          </div>
+
+          <div class="stats" style="margin-top:18px">
+            <div class="stat"><strong>OGP</strong><div style="font-size:13px;color:var(--muted)">Summit & Vantage</div></div>
+            <div class="stat"><strong>Hobiler</strong><div style="font-size:13px;color:var(--muted)">Yüzme · Koşu · Dijital sanat</div></div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card">
+            <!-- Avatar: assets/img/avatar.jpg olarak ekleyin veya URL yazın -->
+            <img class="avatar" src="assets/img/avatar.jpg" alt="Göker Gokkaya — avatar (değiştir)" />
+            <div style="margin-top:12px">
+              <strong>Beni Takip Et</strong>
+              <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">
+                <a class="social" href="https://github.com/gokergokkaya" target="_blank" rel="noopener">GitHub</a>
+                <a class="social" href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section id="projeler" style="margin-bottom:22px">
+        <h2>Projeler & Çalışmalar</h2>
+        <div class="grid" style="margin-top:12px">
+          <div class="card">
+            <h3>OGP Programlama Araçları</h3>
+            <p style="color:var(--muted)">Zone 3 programları ve otomasyon script'leri. (Detaylı örnekler ve repo linkleri ekleyin.)</p>
+            <p style="margin-top:8px"><a href="#" style="font-weight:700">GitHub Repo →</a></p>
+          </div>
+          <div class="card">
+            <h3>Dijital Sanat & Grafik</h3>
+            <p style="color:var(--muted)">Windows Paint ve Photoshop ile üretilen çalışmalar. Galeri ekleyin veya img klasörüne yükleyin.</p>
+          </div>
+          <div class="card">
+            <h3>Koşu & Antrenman</h3>
+            <p style="color:var(--muted)">Diz rehabilitasyonu ve 10K hazırlanma notları. Antrenman günlüğü bağlantısı eklenebilir.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="hakkimda" style="margin-bottom:22px">
+        <div class="card">
+          <h2>Hakkımda</h2>
+          <p style="color:var(--muted)">Merhaba, ben Göker. Mühendislik ve kalite kontrol odaklı bir geçmişe sahibim. İşimde hassas ölçümler, makine programlama ve süreç geliştirme üzerine çalışıyorum. Boş zamanlarımda yüzme, sualtı dalışı, koşu ve dijital sanatla ilgileniyorum. Amacım hem işi hem hobileri dengede tutarak sürekli öğrenmek ve paylaşmak.</p>
+        </div>
+      </section>
+
+      <section id="iletisim">
+        <div class="card">
+          <h2>İletişim</h2>
+          <p style="color:var(--muted)">E-posta: <strong data-email="you@example.com">you@example.com</strong></p>
+          <p style="color:var(--muted)">Bağış / Destek: <a href="https://fundraise.cancerresearchuk.org/page/gokers-giving-page" target="_blank" rel="noopener">Göker’s Giving Page</a></p>
+
+          <div style="margin-top:12px">
+            <strong>Hızlı Not (kopyala-yapıştır):</strong>
+            <pre class="snip">Repo adı: gokergokkaya.github.io
+Index dosyası: index.html
+Avatar: assets/img/avatar.jpg (özelleştir)
+</pre>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small style="color:var(--muted)">© Göker Gokkaya — Bu site GitHub Pages ile ücretsiz barındırılmaktadır.</small>
+    </div>
+  </footer>
+</body>
+</html>
